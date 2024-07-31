@@ -6,11 +6,11 @@ provider "aws"{
 
 
 
-variable "access_key " {
+variable access_key {
     type = string
 }
 
-variable "secret_key " {
+variable secret_key {
     type = string
 }
 resource "aws_vpc" "dep1" {
