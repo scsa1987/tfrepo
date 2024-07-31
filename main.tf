@@ -6,5 +6,16 @@ provider "aws" {
 
 }
 
+resource "aws_vpc" "dep1" {
 
+  cidr_block = "192.168.0.0/16"
+
+  tags = {
+
+   "Name" = "VPC1-nts4"
+
+    
+
+  }
+}
 
